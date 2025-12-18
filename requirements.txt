@@ -1,9 +1,9 @@
-tensorflow
 keras
 pandas
-numpy
-jupyter
-notebook
 tqdm
-opencv-contrib-python
 scikit-learn
+streamlit
+tensorflow==2.10.1
+numpy==1.23.5
+opencv-python
+pillow

@@ -24,13 +24,10 @@ datasets/
 *.tsv
 *.zip
 *.gz
-*.h5
 *.tar
 *.tar.gz
 
 # Model checkpoints & weights
-*.h5
-*.hdf5
 *.ckpt
 *.pb
 checkpoints/
