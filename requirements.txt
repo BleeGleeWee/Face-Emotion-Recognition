@@ -1,6 +1,6 @@
 streamlit
 deepface
+tf-keras
 opencv-python-headless
-pillow
 numpy
-tensorflow>=2.20.0
+pillow
