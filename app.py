@@ -105,7 +105,7 @@ if uploaded_file:
     image = Image.open(uploaded_file).convert("RGB")
 
     # 2. Display Uploaded Image (Full Width)
-    st.image(image, caption="Uploaded Subject", use_column_width=True)
+    st.image(image, caption="Uploaded Subject", width=True)
 
     # Temporary storage for DeepFace
     with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
