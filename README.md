@@ -1,6 +1,6 @@
 
 # 🧠 Image Classification with Keras & TensorFlow
-Deployed link - ([✨Here](https://emotion-recognition-ml.streamlit.app/))
+Deployed link - [✨Here](https://emotion-recognition-ml.streamlit.app/)
 
 This repository contains a deep learning project built with **Keras** and **TensorFlow** for image classification.  
 The model is trained using convolutional neural networks (CNNs) on a custom dataset and demonstrates the full workflow of preprocessing, model training, evaluation, and saving the trained model.
