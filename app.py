@@ -158,6 +158,6 @@ with st.expander("🔍 How the FER Model Works"):
 with st.sidebar:
     st.header("📌 Project Details")
     st.info(
-        "**Backend:** DeepFace (TensorFlow)\n\n**Frontend:** Streamlit Glassmorphism\n\n**Task:** Multiclass Emotion Classification")
+        "**Backend:** Keras & TensorFlow\n\n**Frontend:** Streamlit Glassmorphism\n\n**Task:** Multiclass Emotion Classification")
     st.warning("⚠️ Ensure the subject is facing the camera directly for best accuracy.")
     st.warning("⚠️ Results depend on image clarity and lighting.")
