@@ -1,9 +1,6 @@
-keras
-pandas
-tqdm
-scikit-learn
 streamlit
-tensorflow==2.10.1
-numpy==1.23.5
-opencv-python
+deepface
+opencv-python-headless
 pillow
+numpy
+tensorflow>=2.20.0
