@@ -4,7 +4,6 @@ from PIL import Image
 import tempfile
 import time
 
-
 # UI
 def apply_custom_styles():
     BG_URL = "https://i.etsystatic.com/54143431/r/il/48d57c/6256676432/il_fullxfull.6256676432_r6vw.jpg"
