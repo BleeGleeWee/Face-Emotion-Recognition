@@ -5,9 +5,7 @@ import tempfile
 import time
 
 
-# -------------------------------
-# 🎨 UI Enhancement: Custom CSS & Dark Anime Background
-# -------------------------------
+# UI
 def apply_custom_styles():
     BG_URL = "https://i.etsystatic.com/54143431/r/il/48d57c/6256676432/il_fullxfull.6256676432_r6vw.jpg"
 
@@ -38,7 +36,7 @@ def apply_custom_styles():
 
     /* Light Text Legibility */
     h1, h2, h3, h4, p, span, label, div[data-testid="stMarkdownContainer"] > p {{
-        color: #f1f5f9 !important;
+        color: 
         text-shadow: 2px 2px 4px rgba(0,0,0,0.9);
     }}
 
@@ -48,7 +46,7 @@ def apply_custom_styles():
         border-radius: 15px;
         padding: 25px;
         text-align: center;
-        border-top: 6px solid #3b82f6;
+        border-top: 6px solid
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         margin-top: 20px;
         width: 100%;
@@ -64,15 +62,14 @@ def apply_custom_styles():
 
     /* Ensure sidebar text remains readable */
     [data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] p, [data-testid="stSidebar"] span {{
-        color: #ffffff !important;
+        color:
     }}
     </style>
     """, unsafe_allow_html=True)
 
 
-# -------------------------------
-# Streamlit Page Config
-# -------------------------------
+
+# Streamlit page config
 st.set_page_config(
     page_title="FER AI | Emotion Detector",
     page_icon="🎭",
@@ -81,21 +78,19 @@ st.set_page_config(
 
 apply_custom_styles()
 
-# Helper: Mapping Emotions to Emojis
+# Helper: mapping emotions to emojis
 EMOJI_MAP = {
     "angry": "😠", "disgust": "🤢", "fear": "😨",
     "happy": "😊", "sad": "😢", "surprise": "😲", "neutral": "😐"
 }
 
-# -------------------------------
-# Header Section
-# -------------------------------
+
+# Header sec
 st.title("🎭 FER AI")
 st.markdown("#### Advanced Facial Emotion Recognition System")
 
-# -------------------------------
-# Upload Section
-# -------------------------------
+
+# Upload sec
 uploaded_file = st.file_uploader("📤 Upload a face image to decode emotions", type=["jpg", "png", "jpeg"])
 
 if uploaded_file:
@@ -145,9 +140,8 @@ if uploaded_file:
         except Exception as e:
             st.error("⚠️ Face detection failed. Ensure the face is clear.")
 
-# -------------------------------
-# Technical Info Section (Removed <br> to prevent empty space)
-# -------------------------------
+
+# Technical info sec
 with st.expander("🔍 How the FER Model Works"):
     st.markdown("""
     * **DeepFace Engine:** Uses the VGG-Face or ResNet architecture to extract facial landmarks.
